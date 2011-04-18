@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED9E1F02-D118-427F-94D6-35BB3EC03A32}</ProjectGuid>
+    <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CommPadd</RootNamespace>
+    <AssemblyName>CommPadd</AssemblyName>
+    <BundleIdentifier>com.yourcompany.commpadd</BundleIdentifier>
+    <BundleVersion>1.5</BundleVersion>
+    <BundleDisplayName>Reader</BundleDisplayName>
+    <BundleIcon>Icon.png</BundleIcon>
+    <SupportedDevices>IPhoneAndIPad</SupportedDevices>
+    <MainNibFile>MainWindowIPhone.xib</MainNibFile>
+    <MainNibFileIPad>MainWindow.xib</MainNibFileIPad>
+    <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchI18n />
+    <MtouchMinimumOS>3.1</MtouchMinimumOS>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <MtouchArch>ARMv6</MtouchArch>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchUseSGen>false</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchI18n />
+    <MtouchMinimumOS>3.0</MtouchMinimumOS>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <MtouchArch>ARMv6</MtouchArch>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchUseSGen>false</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchI18n />
+    <MtouchMinimumOS>3.1</MtouchMinimumOS>
+    <MtouchExtraArgs>-v -v -v</MtouchExtraArgs>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <MtouchArch>ARMv6</MtouchArch>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchUseSGen>false</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchI18n />
+    <MtouchMinimumOS>3.1</MtouchMinimumOS>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <MtouchArch>ARMv6</MtouchArch>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchUseSGen>false</MtouchUseSGen>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Distribution|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>False</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchI18n />
+    <MtouchMinimumOS>3.0</MtouchMinimumOS>
+    <MtouchUseLlvm>false</MtouchUseLlvm>
+    <MtouchArch>ARMv6</MtouchArch>
+    <MtouchUseThumb>false</MtouchUseThumb>
+    <MtouchUseSGen>false</MtouchUseSGen>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.xib.designer.cs">
+      <DependentUpon>MainWindow.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="LcarsComponent.cs" />
+    <Compile Include="TopLcars.xib.cs">
+      <DependentUpon>TopLcars.xib</DependentUpon>
+    </Compile>
+    <Compile Include="TopLcars.xib.designer.cs">
+      <DependentUpon>TopLcars.xib</DependentUpon>
+    </Compile>
+    <Compile Include="MainLcars.xib.cs">
+      <DependentUpon>MainLcars.xib</DependentUpon>
+    </Compile>
+    <Compile Include="MainLcars.xib.designer.cs">
+      <DependentUpon>MainLcars.xib</DependentUpon>
+    </Compile>
+    <Compile Include="RssSources.cs" />
+    <Compile Include="ChooseSource.xib.cs">
+      <DependentUpon>ChooseSource.xib</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseSource.xib.designer.cs">
+      <DependentUpon>ChooseSource.xib</DependentUpon>
+    </Compile>
+    <Compile Include="SourceUpdater.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="Repo.cs" />
+    <Compile Include="AddSource.xib.cs">
+      <DependentUpon>AddSource.xib</DependentUpon>
+    </Compile>
+    <Compile Include="AddSource.xib.designer.cs">
+      <DependentUpon>AddSource.xib</DependentUpon>
+    </Compile>
+    <Compile Include="SourceTypeMessages.xib.cs">
+      <DependentUpon>SourceTypeMessages.xib</DependentUpon>
+    </Compile>
+    <Compile Include="SourceTypeMessages.xib.designer.cs">
+      <DependentUpon>SourceTypeMessages.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Theme.cs" />
+    <Compile Include="Sounds.cs" />
+    <Compile Include="MessageReader.xib.cs">
+      <DependentUpon>MessageReader.xib</DependentUpon>
+    </Compile>
+    <Compile Include="MessageReader.xib.designer.cs">
+      <DependentUpon>MessageReader.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Messages.cs" />
+    <Compile Include="Mail.cs" />
+    <Compile Include="Sources.cs" />
+    <Compile Include="Home.xib.cs">
+      <DependentUpon>Home.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Home.xib.designer.cs">
+      <DependentUpon>Home.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Flickr.cs" />
+    <Compile Include="Vimeo.cs" />
+    <Compile Include="Tumblr.cs" />
+    <Compile Include="Twitter.cs" />
+    <Compile Include="AudioPlayer.cs" />
+    <Compile Include="..\HtmlAgilityPack\crc32.cs">
+      <Link>Html\crc32.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\EncodingFoundException.cs">
+      <Link>Html\EncodingFoundException.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlAttribute.cs">
+      <Link>Html\HtmlAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlAttributeCollection.cs">
+      <Link>Html\HtmlAttributeCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlCmdLine.cs">
+      <Link>Html\HtmlCmdLine.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlCommentNode.cs">
+      <Link>Html\HtmlCommentNode.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlDocument.cs">
+      <Link>Html\HtmlDocument.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlElementFlag.cs">
+      <Link>Html\HtmlElementFlag.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlEntity.cs">
+      <Link>Html\HtmlEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlNameTable.cs">
+      <Link>Html\HtmlNameTable.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlNode.cs">
+      <Link>Html\HtmlNode.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlNodeCollection.cs">
+      <Link>Html\HtmlNodeCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlNodeNavigator.cs">
+      <Link>Html\HtmlNodeNavigator.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlNodeType.cs">
+      <Link>Html\HtmlNodeType.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlParseError.cs">
+      <Link>Html\HtmlParseError.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlParseErrorCode.cs">
+      <Link>Html\HtmlParseErrorCode.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlTextNode.cs">
+      <Link>Html\HtmlTextNode.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlWeb.cs">
+      <Link>Html\HtmlWeb.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\HtmlWebException.cs">
+      <Link>Html\HtmlWebException.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\IOLibrary.cs">
+      <Link>Html\IOLibrary.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\MixedCodeDocument.cs">
+      <Link>Html\MixedCodeDocument.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\MixedCodeDocumentCodeFragment.cs">
+      <Link>Html\MixedCodeDocumentCodeFragment.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\MixedCodeDocumentFragment.cs">
+      <Link>Html\MixedCodeDocumentFragment.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\MixedCodeDocumentFragmentList.cs">
+      <Link>Html\MixedCodeDocumentFragmentList.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\MixedCodeDocumentFragmentType.cs">
+      <Link>Html\MixedCodeDocumentFragmentType.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\MixedCodeDocumentTextFragment.cs">
+      <Link>Html\MixedCodeDocumentTextFragment.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\NameValuePair.cs">
+      <Link>Html\NameValuePair.cs</Link>
+    </Compile>
+    <Compile Include="..\HtmlAgilityPack\NameValuePairList.cs">
+      <Link>Html\NameValuePairList.cs</Link>
+    </Compile>
+    <Compile Include="Google.cs" />
+    <Compile Include="InternetTime.cs" />
+    <Compile Include="Youtube.cs" />
+    <Compile Include="Html.cs" />
+    <Compile Include="Http.cs" />
+    <Compile Include="Craigslist.cs" />
+    <Compile Include="ShareView.xib.cs">
+      <DependentUpon>ShareView.xib</DependentUpon>
+    </Compile>
+    <Compile Include="ShareView.xib.designer.cs">
+      <DependentUpon>ShareView.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Form.cs" />
+    <Compile Include="Share.cs" />
+    <Compile Include="ShareUpdater.cs" />
+    <Compile Include="ChooseEmail.xib.cs">
+      <DependentUpon>ChooseEmail.xib</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseEmail.xib.designer.cs">
+      <DependentUpon>ChooseEmail.xib</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleReader.cs" />
+    <Compile Include="UserSettings.xib.cs">
+      <DependentUpon>UserSettings.xib</DependentUpon>
+    </Compile>
+    <Compile Include="UserSettings.xib.designer.cs">
+      <DependentUpon>UserSettings.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Debug.cs" />
+    <Compile Include="ScanningView.cs" />
+    <Compile Include="MainWindowIPhone.xib.designer.cs">
+      <DependentUpon>MainWindowIPhone.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Ebay.cs" />
+    <Compile Include="Facebook.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="InitialData.cs" />
+    <Compile Include="OAuthAuthorizer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xib" />
+    <Page Include="TopLcars.xib" />
+    <Page Include="MainLcars.xib" />
+    <Page Include="ChooseSource.xib" />
+    <Page Include="AddSource.xib" />
+    <Page Include="SourceTypeMessages.xib" />
+    <Page Include="MessageReader.xib" />
+    <Page Include="Home.xib" />
+    <Page Include="ShareView.xib" />
+    <Page Include="ChooseEmail.xib" />
+    <Page Include="UserSettings.xib" />
+    <Page Include="MainWindowIPhone.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Content Include="Sounds\207.caf" />
+    <Content Include="Sounds\204.caf" />
+    <Content Include="Sounds\218.caf" />
+    <Content Include="Sounds\213.caf" />
+    <Content Include="Sounds\225.caf" />
+    <Content Include="Sounds\203.caf" />
+    <Content Include="Sounds\222.caf" />
+    <Content Include="Sounds\201.caf" />
+    <Content Include="Sounds\201r.caf" />
+    <Content Include="Icon.png" />
+    <Content Include="lcars.ttf" />
+    <Content Include="TimeZones.txt" />
+    <Content Include="ScanningBackground.jpg" />
+    <Content Include="Sounds\214.caf" />
+    <Content Include="Sounds\214r.caf" />
+    <Content Include="Icon-Small-50.png" />
+    <Content Include="Icon-Small.png" />
+    <Content Include="Default.png" />
+    <Content Include="IconIPad.png" />
+    <Content Include="DefaultIPad-LandscapeLeft.png" />
+    <Content Include="DefaultIPad-LandscapeRight.png" />
+    <Content Include="DefaultIPad-Portrait.png" />
+    <Content Include="DefaultIPad-PortraitUpsideDown.png" />
+    <Content Include="Sounds\210.caf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Html\" />
+  </ItemGroup>
+</Project>

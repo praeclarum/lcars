@@ -1,0 +1,63 @@
+The Code
+===
+
+Here is the source code to [LCARS Reader](http://lcarsreader.com). This was once the coolest
+news reader on the app store. Now it's just a blob of C# files on github.
+
+Take from it what you will. It's MIT licensed. It's pretty battle tested, but I wouldn't say
+that it's my favorite architecture any more.
+
+There are lots of scrapers in here, a lot of good ideas, and a lot of bad ideas. This was my first
+MonoTouch app and my first iPad app, so please keep this in mind when reading the source code. Enjoy!
+
+-Frank `#winning #tigerblood`
+
+
+About
+===
+
+The LCARS Internet Media Reader is the next generation in internet readers. It is your personal communications device that simplifies all your internet browsing. News, Articles, Podcasts, Pictures, Twitter, Video - this app gathers it all in one place so you can enjoy your iPad without breaking a sweat.
+
+It's a great news reader. Just enter any search term and it will subscribe to that search so that all the latest information is sent directly to you. It is constantly working in the background to make sure you stay informed on any topic.
+
+Use it's vibrant interface to boldly voyage the internet.
+
+Cool features:
+
+* Beeps satisfyingly
+* Works in portrait or landscape
+* Wil Wheaton will be jealous of you
+* Seriously, this is why you bought an iPad
+
+It's a Podcast player too! 
+---
+
+Enter the website or the podcast and you will be able to listen to your favorite shows and read show notes in seconds! (Playing audio requires that you have an active internet connection.)
+
+Flickr too!
+---
+
+Search Flickr or subscribe to user's photo streams. Stay up to date with your friends without having to switch apps or use a browser.
+
+And Videos!
+---
+
+Thanks to the forward thinking developers at Vimeo, the LCARS Reader is able to play almost their full selection. Just enter some Vimeo searches and enjoy watching some very creative people! (Playing videos requires also requires an internet connection.)
+
+Twitter!
+---
+
+You can't post (YET!), but you can read your home page and subscribe to searches.
+
+Craigslist?
+---
+
+Yep, Craigslist! While it would be nice if we could just sit around all day and read on the internet, we must also buy things! Are you waiting for a good deal on an Aeron chair, or maybe another Mac Mini to round out the collection? Well now you can subscribe to searches and be informed when those new necessities of life are available.
+
+And so much more!
+---
+
+If there is a blog or news site that you love, simply enter its URL into the app as a blog and you will be subscribed to its contents! Or try one of the big aggregator sites like digg.com or reddit.com to get a variety of articles.
+
+Try this app out and you'll wonder how you survived without it! You're going to buy it for the same reason I wrote it - because using a UI like this on an iPad speaks to something deep inside of you.  The part of you that used to collect action figures, and make props out of cardboard and glue.
+
